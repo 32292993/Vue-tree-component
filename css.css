@@ -1,0 +1,28 @@
+*{
+	margin:0;padding:0;
+}
+body{
+	background: #2C3E50;
+	padding-top:300px;
+	color: #46CFB0;
+	font-family: 'microsoft Yahei'
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 3em;
+}
+
+
+.open:before{
+	content: " -- ";
+}
+.close:before{
+	content: " + ";
+}
+
+.tree{
+	height: 0;
+	overflow: hidden;
+	transition:all 1s ease;
+}
