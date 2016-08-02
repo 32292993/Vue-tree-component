@@ -3,16 +3,25 @@
 }
 body{
 	background: #2C3E50;
-	padding-top:300px;
+	margin:100px 50px;
 	color: #46CFB0;
-	font-family: 'microsoft Yahei'
+	font-family: 'ubuntu','microsoft Yahei'
 }
 
 ul{
+	font-size: 30px;
 	list-style-type: none;
 	padding-left: 3em;
 }
-
+.item{
+	cursor: pointer;
+	padding:0 4px;
+}
+.item:hover{
+	background: #46CFB0;
+	border-radius: 7px;
+	color:#fff;
+}
 
 .open:before{
 	content: " -- ";
@@ -21,8 +30,13 @@ ul{
 	content: " + ";
 }
 
-.tree{
+.expand-transition {
+	transition: all 0.3s ease;
+  	overflow: hidden;
+}
+
+.expand-enter,
+.expand-leave{
+	opacity: 0;
 	height: 0;
-	overflow: hidden;
-	transition:all 1s ease;
 }
