@@ -32,11 +32,11 @@ ul{
 
 .expand-transition {
 	transition: all 0.3s ease;
-  	overflow: hidden;
+	overflow: hidden;
 }
 
 .expand-enter,
 .expand-leave{
 	opacity: 0;
-	height: 0;
+	height: 0 !important;
 }
