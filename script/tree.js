@@ -24,28 +24,6 @@ var myCp = Vue.extend({
             }
         }
     })
-Vue.transition('expand', {
-  beforeEnter: function (el) {
-    $(el).height($(el).height())
-  },
-  enter: function (el) {
-  },
-  afterEnter: function (el) {
-    $(el).removeAttr("style")
-  },
-  beforeLeave: function(el){
-    // alert($(el).height());
-    // var height = $(el).height();
-    // $(el).height(height)
-    // alert($(el).height())
-    $(el).height($(el).height())
-    $(el).height($(el).height())
-    // alert($(el).height());
-  },
-  leave:function(el){
-    $(el).removeAttr("style")
-  }
-})
 
 Vue.component('my-component',myCp);
 
